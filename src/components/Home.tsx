@@ -18,7 +18,7 @@ function Home() {
 
     async function buscarClima(cityName: string) {
         const { data } = await axios(
-            `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=pt&appid=d5a409b9a1b2eadfbf4525a057334903`
+            `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=pt&appid=d5a409b9a1b2eadfbf4525a057334903`
         )
         return data
     }
